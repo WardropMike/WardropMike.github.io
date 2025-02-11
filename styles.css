@@ -5,6 +5,27 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+}
+
+#dark-mode-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    cursor: pointer;
 }
 
 /* Header */
@@ -15,22 +36,18 @@ header {
     padding: 1.5rem;
 }
 
-/* Sections */
-section {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
-/* Projects */
 .project {
     background: #eee;
     padding: 15px;
-    margin: 10px 0;
-    border-left: 5px solid #333;
+    border-radius: 8px;
+    text-align: center;
 }
 
 .project a {
@@ -39,7 +56,17 @@ section {
     font-weight: bold;
 }
 
-/* Contact */
+body.dark-mode .project {
+    background: #222;
+}
+
+/* Links */
 #contact p a {
     color: #0077cc;
-    text-dec
+    text-decoration: none;
+    font-weight: bold;
+}
+
+body.dark-mode #contact p a {
+    color: #66b3ff;
+}
