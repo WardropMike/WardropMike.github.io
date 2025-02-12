@@ -16,11 +16,10 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-    background: linear-gradient(to bottom, #1E1E1E, #3A3A3A); /* Darker silver */
+    background-color: #121212;
     color: #f4f4f4;
 }
 
-/* Dark Mode Toggle */
 #dark-mode-toggle {
     position: absolute;
     top: 10px;
@@ -45,21 +44,27 @@ header {
 }
 
 .project {
-    background: #ddd; /* Lighter background for contrast */
+    background: #eee;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
+    color: #000; /* Updated font color to black */
+    word-wrap: break-word; /* Ensures text and links wrap within the card */
+    overflow-wrap: break-word;
 }
 
 .project a {
     text-decoration: none;
     color: #0077cc;
     font-weight: bold;
+    display: block; /* Ensures links wrap properly */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-/* Dark Mode for Projects */
 body.dark-mode .project {
-    background: linear-gradient(to bottom, #252525, #3A3A3A); /* Darker silver for contrast */
+    background: linear-gradient(to bottom, #1E1E1E, #3A3A3A);
+    color: #000;
 }
 
 /* Links */
