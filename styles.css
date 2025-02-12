@@ -3,8 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    /*background-color: #f4f4f4;*/
+    /*color: #333;*/
+    background: linear-gradient(to bottom, #2F2F2F, #4B4B4B); /* Dark silver gradient */
+    color: #f4f4f4;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -57,7 +59,8 @@ header {
 }
 
 body.dark-mode .project {
-    background: #222;
+    /*background: #222;*/
+    background: linear-gradient(to bottom, #1E1E1E, #3A3A3A);
 }
 
 /* Links */
