@@ -3,8 +3,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    /*background-color: #f4f4f4;*/
-    /*color: #333;*/
     background: linear-gradient(to bottom, #2F2F2F, #4B4B4B); /* Dark silver gradient */
     color: #f4f4f4;
     transition: background 0.3s, color 0.3s;
@@ -18,10 +16,11 @@ body {
 
 /* Dark Mode */
 body.dark-mode {
-    background-color: #121212;
+    background: linear-gradient(to bottom, #1E1E1E, #3A3A3A); /* Darker silver */
     color: #f4f4f4;
 }
 
+/* Dark Mode Toggle */
 #dark-mode-toggle {
     position: absolute;
     top: 10px;
@@ -46,7 +45,7 @@ header {
 }
 
 .project {
-    background: #eee;
+    background: #ddd; /* Lighter background for contrast */
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -58,9 +57,9 @@ header {
     font-weight: bold;
 }
 
+/* Dark Mode for Projects */
 body.dark-mode .project {
-    /*background: #222;*/
-    background: linear-gradient(to bottom, #1E1E1E, #3A3A3A);
+    background: linear-gradient(to bottom, #252525, #3A3A3A); /* Darker silver for contrast */
 }
 
 /* Links */
