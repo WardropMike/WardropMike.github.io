@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #2F2F2F, #4B4B4B); /* Dark silver gradient */
+    background: #000; /* Sets the main background to black */
     color: #f4f4f4;
     transition: background 0.3s, color 0.3s;
 }
