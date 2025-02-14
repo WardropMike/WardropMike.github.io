@@ -36,6 +36,31 @@ header {
     padding: 1.5rem;
 }
 
+/* Top Navigation */
+.top-nav {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.top-nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+.top-nav li {
+    display: inline;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
 /* Projects Grid */
 .projects-grid {
     display: grid;
